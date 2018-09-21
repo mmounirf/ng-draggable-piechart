@@ -23,7 +23,7 @@ export class DraggablePieChartComponent implements OnInit{
     this.uiValuesMapper(piechart.getAllSliceSizePercentages())
   }
 
-  renderPie(data) {
+  renderPie() {
     this.pieChart = new DraggablePiechart({
       canvas: document.getElementById('piechart'),
       onchange: this.onPieChartChange,
