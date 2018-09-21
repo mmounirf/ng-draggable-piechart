@@ -20,7 +20,6 @@ export class DraggablePieChartComponent implements OnInit{
   }
 
   onPieChartChange = (piechart) => {
-    console.log(piechart)
     this.uiValuesMapper(piechart.getAllSliceSizePercentages())
   }
 
