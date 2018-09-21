@@ -1,0 +1,36 @@
+app-draggable-pie-chart{
+  display: flex;
+  justify-content: center;
+}
+
+.controllers{
+  display: flex;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.labels, .values{
+  display: flex;
+    flex-direction: column;
+}
+
+.labels{
+  width: 50%;
+  margin: 0 20px;
+}
+
+.values{
+  width: 10%;
+  margin: 0 20px;
+}
+
+.colors{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
