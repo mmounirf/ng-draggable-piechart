@@ -1,3 +1,10 @@
+strong{
+  display: flex;
+  width: 100%;
+  margin: 50px;
+  justify-content: center;
+}
+
 app-draggable-pie-chart{
   display: flex;
   justify-content: center;
@@ -6,6 +13,7 @@ app-draggable-pie-chart{
 .controllers{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;

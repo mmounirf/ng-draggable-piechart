@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter, OnChanges, Input, SimpleChange, SimpleChanges, ChangeDetectorRef } from '@angular/core';
-import * as DraggablePieChart from '../../../assets/draggable-piechart.js';
 import { ChangeDetectionStrategy } from '@angular/compiler/src/core';
 
 @Component({
@@ -12,7 +11,7 @@ export class DraggablePieChartComponent implements OnInit{
   @Input() data: any[];
   @Output() sliceDragged: EventEmitter<any> = new EventEmitter<any>();
   changeDetection: ChangeDetectionStrategy.OnPush;
-  pieChart: DraggablePiechart
+  pieChart: any;
   constructor() { }
 
   ngOnInit() {

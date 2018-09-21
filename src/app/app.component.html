@@ -1,6 +1,10 @@
 <div class="container">
+
   <app-draggable-pie-chart #pieComp [data]="pieData" (sliceDragged)="sliceDragged($event)"></app-draggable-pie-chart>
+
   <div class="controllers">
+      <strong>chart updates propagated onBlur</strong>
+
     <div class="labels">
         <mat-form-field *ngFor="let data of uiData; let i=index">
             <input matInput placeholder="Slice Label" [ngModel]="data.label" (change)="updateLabel($event.target.value, i)">
